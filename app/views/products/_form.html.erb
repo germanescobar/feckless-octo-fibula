@@ -13,14 +13,6 @@
           <div class="form-group">
             <%= f.text_field :price, class: "form-control input-lg", placeholder: "Precio del producto" %>
           </div>
-          
-          <%= f.collection_check_boxes :category_ids, Category.all, :id, :name  do |c| %>
-            <div class="checkbox">
-              <%= c.label do %>
-                <%= c.check_box %> <%= c.object.name %>
-              <% end %>
-            </div>
-          <% end %>  
         </div>
 
         <div class="modal-footer">
